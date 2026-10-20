@@ -127,7 +127,7 @@ async function copyPrompt() {
   const text = els.output.textContent;
   try {
     await navigator.clipboard.writeText(text);
-    flashToast("已複製提示詞，可以貼到 NotebookLM 了。");
+    flashToast("已複製提示詞，請貼到 NotebookLM 題庫。");
   } catch {
     const range = document.createRange();
     range.selectNodeContents(els.output);
@@ -136,7 +136,7 @@ async function copyPrompt() {
     selection.addRange(range);
     document.execCommand("copy");
     selection.removeAllRanges();
-    flashToast("已複製提示詞，可以貼到 NotebookLM 了。");
+    flashToast("已複製提示詞，請貼到 NotebookLM 題庫。");
   }
 }
 
