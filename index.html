@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Puti-AI 國語學力檢測提示詞助手：讓老師快速複製分析、命題、模擬考與補救教學提示詞。" />
-    <title>Puti-AI 國語學力檢測提示詞助手</title>
+    <title>Puti-AI ESSA-CHI｜國小國語學力檢測備考助手</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261020-unified-1" />
   </head>
-  <body>
+  <body data-subject="CHI">
     <div class="ambient ambient-one"></div>
     <div class="ambient ambient-two"></div>
 
@@ -18,11 +18,11 @@
       <a class="brand" href="#top" aria-label="Puti-AI 首頁">
         <span class="brand-mark"><span></span><span></span><span></span></span>
         <span>
-          <strong>Puti-AI</strong>
+          <strong>Puti-AI ESSA-CHI</strong>
           <small>國語學力檢測支援</small>
         </span>
       </a>
-      <div class="header-actions"><div class="header-note"><span class="pulse-dot"></span>以題庫為證據，讓 AI 變成教學助手</div><a class="notebook-link header-notebook-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 Gemini Notebook ↗</a></div>
+      <div class="header-actions"><div class="header-note"><span class="pulse-dot"></span>以題庫為證據，讓 AI 變成教學助手</div><a class="notebook-link header-notebook-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 NotebookLM 題庫 ↗</a></div>
     </header>
 
     <main id="top" class="shell">
@@ -30,10 +30,10 @@
         <div class="hero-copy">
           <p class="eyebrow">PROMPT NAVIGATOR / NOTEBOOKLM WORKFLOW</p>
           <h1><span class="hero-title-dark">Puti-AI國小【國語】</span><br /><em>學力檢測備考助手</em></h1>
-          <p class="hero-text">選一個任務、設定年級與資料範圍，複製一段已經整理好的提示詞，貼到你的 NotebookLM，就能開始分析評量架構、命題趨勢、紅黃綠重點與練習需求。</p>
+          <p class="hero-text">選擇任務、設定年級與資料範圍，複製提示詞後貼到 NotebookLM 題庫，就能分析評量架構、命題趨勢與紅黃綠重點，並產生練習題。</p>
           <div class="hero-actions">
             <a class="primary-button" href="#workbench">開始產生提示詞 <span>↓</span></a>
-            <a class="notebook-link hero-notebook-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 Gemini Notebook ↗</a>
+            <a class="notebook-link hero-notebook-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 NotebookLM 題庫 ↗</a>
             <a class="text-link" href="#how">先看怎麼用 <span>↗</span></a>
           </div>
         </div>
@@ -120,12 +120,12 @@
             </div>
             <p id="promptDescription" class="prompt-description"></p>
             <div class="prompt-box-wrap">
-              <div class="prompt-toolbar"><span><i></i><i></i><i></i></span><small>複製後貼到你的 NotebookLM</small><a class="notebook-toolbar-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 Notebook ↗</a><button id="copyButton" class="copy-button" type="button">複製提示詞 <span>⌘ C</span></button></div>
+              <div class="prompt-toolbar"><span><i></i><i></i><i></i></span><small>複製後貼到 NotebookLM 題庫</small><a class="notebook-toolbar-link" href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 NotebookLM 題庫 ↗</a><button id="copyButton" class="copy-button" type="button">複製提示詞 <span>⌘ C</span></button></div>
               <pre id="promptOutput" class="prompt-output" tabindex="0"></pre>
             </div>
             <div id="copyToast" class="copy-toast" role="status" aria-live="polite">已複製提示詞，可以貼到 NotebookLM 了。</div>
-            <div class="paste-guide"><span class="guide-step">下一步</span><strong>開啟 Gemini Notebook → 貼上提示詞 → 按下送出</strong><a href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">現在開啟筆記本 ↗</a></div>
-            <div class="prompt-footnote"><span class="spark">✦</span><span>提示詞會要求 NotebookLM 只根據你筆記本中的資料回答，並分開標示原題分析與 AI 仿作。</span></div>
+            <div class="paste-guide"><span class="guide-step">下一步</span><strong>開啟 NotebookLM 題庫 → 貼上提示詞 → 按下送出</strong><a href="https://notebook.google.com/notebook/789f4f66-c0e9-45cc-bc9b-2d2b134ce6b9" target="_blank" rel="noopener">開啟 NotebookLM 題庫 ↗</a></div>
+            <div class="prompt-footnote"><span class="spark">✦</span><span>提示詞會要求 NotebookLM 依題庫與評量架構回答；測驗一次產出，學生版在上、教師版答案與解析在下。</span></div>
           </section>
         </div>
       </section>
@@ -151,7 +151,7 @@
           <div class="how-steps">
             <div><strong>01</strong><span>選擇需求</span><p>趨勢、紅黃綠、五題小考或模擬考。</p></div>
             <div><strong>02</strong><span>設定條件</span><p>選年級、資料範圍與聚焦向度，讓答案更貼近現場。</p></div>
-            <div><strong>03</strong><span>複製、開啟、貼上</span><p>複製提示詞後，點開 Gemini Notebook，貼上提示詞並送出。</p></div>
+            <div><strong>03</strong><span>複製、開啟、貼上</span><p>複製提示詞後，開啟 NotebookLM 題庫，貼上提示詞並送出。</p></div>
           </div>
         </div>
       </section>
@@ -163,7 +163,6 @@
       <a href="https://padlet.com/clongwh/puti_ai_tools" target="_blank" rel="noopener">更多 Puti-AI 教學工具 <span>↗</span></a>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=20261020-unified-1"></script>
   </body>
 </html>
-
