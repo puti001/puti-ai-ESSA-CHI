@@ -3,7 +3,7 @@
   --muted: #6c7f87;
   --line: #dce7e4;
   --paper: #f7fbf8;
-  --page-background: var(--page-background);
+  --page-background: #f5faf7;
   --panel: rgba(255, 255, 255, 0.83);
   --teal: #178d79;
   --teal-dark: #116554;
@@ -18,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--ink);
-  background: #f5faf7;
+  background: var(--page-background);
   font-family: "Noto Sans TC", system-ui, sans-serif;
   font-size: 18px;
   line-height: 1.7;
